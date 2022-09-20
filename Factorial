@@ -1,0 +1,63 @@
+# Factorial
+n=int(input())
+i=1
+while(i<=n):
+    if(n%i==0):
+        n//=i
+    else:
+        break
+    i+=1;
+if(n==1):
+    print("yes")
+else:
+    print("no")
+
+
+# Arithmetic operations 
+n=int(input())
+m=int(input())
+s=n+m
+print(s)
+r=n-m
+print(r)
+t=n*m
+print(t)
+a=n/m
+print(a)
+b=n//m
+print(b)
+c=n%m
+print(c)
+
+#rgy lights
+s=float(input())
+d=float(input())
+t=float(input())
+n=d/s
+if(t*t*n<t):
+    print("yes")
+else:
+    print("no")
+
+#sum of n natural numbers
+a=int(input())
+sum=0
+while (a>0):
+    b=(a%10)
+    sum=(sum+b)
+    a=(a//10)
+print(sum)
+
+#palimdrome
+num=int(input())
+
+temp=num
+rev=0
+while(num>0):
+    a=num%10
+    rev=rev*10+a
+    num=num//10
+if(temp==rev):
+    print("Palindrome")
+else:
+    print("Not a Palindrome")
